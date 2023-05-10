@@ -36,7 +36,7 @@ jobs:
         id: generate
         with:
           token: ${{ secrets.PAT }}
-          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=10&hide_border=true&role=owner,collaborator&theme=dark&bg_color=000000'
+          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=10&hide_border=true&role=owner,collaborator&theme=tokyonight'
           card: 'top-langs'
           path: top-langs.svg
       - uses: actions/upload-artifact@master
